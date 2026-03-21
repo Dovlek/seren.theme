@@ -53,65 +53,114 @@
             <orientation>vertical</orientation>
             <focusposition>1</focusposition>
             <itemlayout height="120">
+                <!-- Quality badge: 4K (gold) -->
+                <control type="image"><left>10</left><top>64</top><width>80</width><height>50</height><texture>white.png</texture><colordiffuse>FF333000</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),4K)</visible></control>
+                <control type="image"><left>10</left><top>64</top><width>80</width><height>3</height><texture>white.png</texture><colordiffuse>FFFFD700</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),4K)</visible></control>
+                <control type="image"><left>10</left><top>111</top><width>80</width><height>3</height><texture>white.png</texture><colordiffuse>FFFFD700</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),4K)</visible></control>
+                <control type="image"><left>10</left><top>64</top><width>3</width><height>50</height><texture>white.png</texture><colordiffuse>FFFFD700</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),4K)</visible></control>
+                <control type="image"><left>87</left><top>64</top><width>3</width><height>50</height><texture>white.png</texture><colordiffuse>FFFFD700</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),4K)</visible></control>
                 <control type="label">
-                    <top>5</top>
-                    <left>10</left>
-                    <width>1400</width>
-                    <height>50</height>
+                    <left>10</left><top>64</top><width>80</width><height>50</height>
+                    <font>font12_title</font>
+                    <textcolor>FFFFD700</textcolor>
+                    <align>center</align><aligny>center</aligny>
+                    <label>4K</label>
+                    <visible>String.IsEqual(ListItem.Property(quality),4K)</visible>
+                </control>
+                <!-- Quality badge: 1080p (red) -->
+                <control type="image"><left>10</left><top>64</top><width>80</width><height>50</height><texture>white.png</texture><colordiffuse>FF380808</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),1080p)</visible></control>
+                <control type="image"><left>10</left><top>64</top><width>80</width><height>3</height><texture>white.png</texture><colordiffuse>FFDD3333</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),1080p)</visible></control>
+                <control type="image"><left>10</left><top>111</top><width>80</width><height>3</height><texture>white.png</texture><colordiffuse>FFDD3333</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),1080p)</visible></control>
+                <control type="image"><left>10</left><top>64</top><width>3</width><height>50</height><texture>white.png</texture><colordiffuse>FFDD3333</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),1080p)</visible></control>
+                <control type="image"><left>87</left><top>64</top><width>3</width><height>50</height><texture>white.png</texture><colordiffuse>FFDD3333</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),1080p)</visible></control>
+                <control type="label">
+                    <left>10</left><top>64</top><width>80</width><height>50</height>
+                    <font>font12_title</font>
+                    <textcolor>FFDD3333</textcolor>
+                    <align>center</align><aligny>center</aligny>
+                    <label>1080p</label>
+                    <visible>String.IsEqual(ListItem.Property(quality),1080p)</visible>
+                </control>
+                <!-- Quality badge: 720p (green) -->
+                <control type="image"><left>10</left><top>64</top><width>80</width><height>50</height><texture>white.png</texture><colordiffuse>FF1A0829</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),720p)</visible></control>
+                <control type="image"><left>10</left><top>64</top><width>80</width><height>3</height><texture>white.png</texture><colordiffuse>FF9933CC</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),720p)</visible></control>
+                <control type="image"><left>10</left><top>111</top><width>80</width><height>3</height><texture>white.png</texture><colordiffuse>FF9933CC</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),720p)</visible></control>
+                <control type="image"><left>10</left><top>64</top><width>3</width><height>50</height><texture>white.png</texture><colordiffuse>FF9933CC</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),720p)</visible></control>
+                <control type="image"><left>87</left><top>64</top><width>3</width><height>50</height><texture>white.png</texture><colordiffuse>FF9933CC</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),720p)</visible></control>
+                <control type="label">
+                    <left>10</left><top>64</top><width>80</width><height>50</height>
+                    <font>font12_title</font>
+                    <textcolor>FF9933CC</textcolor>
+                    <align>center</align><aligny>center</aligny>
+                    <label>720p</label>
+                    <visible>String.IsEqual(ListItem.Property(quality),720p)</visible>
+                </control>
+                <!-- Quality badge: SD (gray) -->
+                <control type="image"><left>10</left><top>64</top><width>80</width><height>50</height><texture>white.png</texture><colordiffuse>FF1F1F1F</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),SD)</visible></control>
+                <control type="image"><left>10</left><top>64</top><width>80</width><height>3</height><texture>white.png</texture><colordiffuse>FF888888</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),SD)</visible></control>
+                <control type="image"><left>10</left><top>111</top><width>80</width><height>3</height><texture>white.png</texture><colordiffuse>FF888888</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),SD)</visible></control>
+                <control type="image"><left>10</left><top>64</top><width>3</width><height>50</height><texture>white.png</texture><colordiffuse>FF888888</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),SD)</visible></control>
+                <control type="image"><left>87</left><top>64</top><width>3</width><height>50</height><texture>white.png</texture><colordiffuse>FF888888</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),SD)</visible></control>
+                <control type="label">
+                    <left>10</left><top>64</top><width>80</width><height>50</height>
+                    <font>font12_title</font>
+                    <textcolor>FF888888</textcolor>
+                    <align>center</align><aligny>center</aligny>
+                    <label>SD</label>
+                    <visible>String.IsEqual(ListItem.Property(quality),SD)</visible>
+                </control>
+                <!-- Quality badge: fallback / unknown (dim) -->
+                <control type="image"><left>10</left><top>64</top><width>80</width><height>50</height><texture>white.png</texture><colordiffuse>FF131313</colordiffuse><visible>!String.IsEqual(ListItem.Property(quality),4K)+!String.IsEqual(ListItem.Property(quality),1080p)+!String.IsEqual(ListItem.Property(quality),720p)+!String.IsEqual(ListItem.Property(quality),SD)</visible></control>
+                <control type="image"><left>10</left><top>64</top><width>80</width><height>3</height><texture>white.png</texture><colordiffuse>FF555555</colordiffuse><visible>!String.IsEqual(ListItem.Property(quality),4K)+!String.IsEqual(ListItem.Property(quality),1080p)+!String.IsEqual(ListItem.Property(quality),720p)+!String.IsEqual(ListItem.Property(quality),SD)</visible></control>
+                <control type="image"><left>10</left><top>111</top><width>80</width><height>3</height><texture>white.png</texture><colordiffuse>FF555555</colordiffuse><visible>!String.IsEqual(ListItem.Property(quality),4K)+!String.IsEqual(ListItem.Property(quality),1080p)+!String.IsEqual(ListItem.Property(quality),720p)+!String.IsEqual(ListItem.Property(quality),SD)</visible></control>
+                <control type="image"><left>10</left><top>64</top><width>3</width><height>50</height><texture>white.png</texture><colordiffuse>FF555555</colordiffuse><visible>!String.IsEqual(ListItem.Property(quality),4K)+!String.IsEqual(ListItem.Property(quality),1080p)+!String.IsEqual(ListItem.Property(quality),720p)+!String.IsEqual(ListItem.Property(quality),SD)</visible></control>
+                <control type="image"><left>87</left><top>64</top><width>3</width><height>50</height><texture>white.png</texture><colordiffuse>FF555555</colordiffuse><visible>!String.IsEqual(ListItem.Property(quality),4K)+!String.IsEqual(ListItem.Property(quality),1080p)+!String.IsEqual(ListItem.Property(quality),720p)+!String.IsEqual(ListItem.Property(quality),SD)</visible></control>
+                <control type="label">
+                    <left>10</left><top>64</top><width>80</width><height>50</height>
+                    <font>font12_title</font>
+                    <textcolor>FF888888</textcolor>
+                    <align>center</align><aligny>center</aligny>
+                    <label>SD</label>
+                    <visible>!String.IsEqual(ListItem.Property(quality),4K)+!String.IsEqual(ListItem.Property(quality),1080p)+!String.IsEqual(ListItem.Property(quality),720p)+!String.IsEqual(ListItem.Property(quality),SD)</visible>
+                </control>
+                <!-- Title -->
+                <control type="label">
+                    <top>10</top><left>10</left><width>1260</width><height>50</height>
                     <font>font12</font>
                     <textcolor>66FFFFFF</textcolor>
-                    <align>left</align>
-                    <aligny>center</aligny>
+                    <align>left</align><aligny>center</aligny>
                     <label>[B][UPPERCASE]$INFO[ListItem.Label][/UPPERCASE][/B]</label>
                 </control>
+                <!-- Detail row 1: Size | Provider | Type -->
                 <control type="label">
-                    <top>50</top>
-                    <left>10</left>
-                    <width>350</width>
-                    <height>50</height>
+                    <top>60</top><left>110</left><width>165</width><height>50</height>
                     <font>font12</font>
                     <textcolor>AAFFFFFF</textcolor>
                     <align>left</align>
-                    <label>Size: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(size)][/COLOR]
-                    </label>
+                    <label>Size: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(size)][/COLOR]</label>
                 </control>
                 <control type="label">
-                    <top>50</top>
-                    <left>400</left>
-                    <width>350</width>
-                    <height>50</height>
+                    <top>60</top><left>325</left><width>340</width><height>50</height>
                     <font>font12</font>
                     <textcolor>AAFFFFFF</textcolor>
-                    <label>Provider: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(provider)][/COLOR]
-                    </label>
+                    <label>Provider: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(provider)][/COLOR]</label>
                 </control>
                 <control type="label">
-                    <top>50</top>
-                    <left>800</left>
-                    <width>350</width>
-                    <height>50</height>
+                    <top>60</top><left>680</left><width>620</width><height>50</height>
                     <font>font12</font>
                     <textcolor>AAFFFFFF</textcolor>
-                    <label>Type: [UPPERCASE][COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(type)][/COLOR][/UPPERCASE]
-                    </label>
+                    <label>Type: [UPPERCASE][COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(type)][/COLOR][/UPPERCASE]</label>
                 </control>
+                <!-- Detail row 2: Quality | Debrid | Info -->
                 <control type="label">
-                    <top>80</top>
-                    <left>10</left>
-                    <width>350</width>
-                    <height>50</height>
+                    <top>90</top><left>110</left><width>165</width><height>50</height>
                     <font>font12</font>
                     <textcolor>AAFFFFFF</textcolor>
                     <align>left</align>
-                    <font>font12</font>
-                    <label>Quality: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(quality)][/COLOR]
-                    </label>
+                    <label>Quality: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(quality)][/COLOR]</label>
                 </control>
                 <control type="label">
-                    <top>80</top>
-                    <left>400</left>
-                    <width>350</width>
-                    <height>50</height>
+                    <top>90</top><left>325</left><width>340</width><height>50</height>
                     <font>font12</font>
                     <textcolor>AAFFFFFF</textcolor>
                     <align>left</align>
@@ -119,119 +168,172 @@
                     <visible>!String.Contains(ListItem.Property(debrid_provider),USENET)</visible>
                 </control>
                 <control type="label">
-                    <top>80</top>
-                    <left>400</left>
-                    <width>350</width>
-                    <height>50</height>
+                    <top>90</top><left>325</left><width>340</width><height>50</height>
                     <font>font12</font>
                     <textcolor>AAFFFFFF</textcolor>
                     <align>left</align>
-                    <label>Hoster:     [UPPERCASE][COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(debrid_provider)][/COLOR][/UPPERCASE]</label>
+                    <label>Hoster: [UPPERCASE][COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(debrid_provider)][/COLOR][/UPPERCASE]</label>
                     <visible>String.Contains(ListItem.Property(debrid_provider),USENET)</visible>
                 </control>
                 <control type="label">
-                    <top>80</top>
-                    <left>800</left>
-                    <width>350</width>
-                    <height>50</height>
-                    <textcolor>AAFFFFFF</textcolor>
+                    <top>90</top><left>680</left><width>620</width><height>50</height>
                     <font>font12</font>
-                    <label>Info: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(info_text_piped_color)][/COLOR]
-                    </label>
+                    <textcolor>AAFFFFFF</textcolor>
+                    <label>Info: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(info_text_piped_color)][/COLOR]</label>
                 </control>
             </itemlayout>
 
             <focusedlayout height="120">
                 <control type="image">
+                    <top>15</top>
                     <width>100%</width>
-                    <height>100%</height>
+                    <height>90%</height>
                     <texture>$INFO[Window().Property(texture.white)]</texture>
-                    <colordiffuse>FFFFFFFF</colordiffuse>
+                    <colordiffuse>20FFFFFF</colordiffuse>
                 </control>
+                <!-- Card border top -->
+                <control type="image">
+                    <top>15</top>
+                    <width>100%</width>
+                    <height>2</height>
+                    <texture>white.png</texture>
+                    <colordiffuse>80FFFFFF</colordiffuse>
+                </control>
+                <!-- Card border bottom -->
+                <control type="image">
+                    <top>121</top>
+                    <width>100%</width>
+                    <height>2</height>
+                    <texture>white.png</texture>
+                    <colordiffuse>80FFFFFF</colordiffuse>
+                </control>
+                <!-- Quality badge: 4K (gold) -->
+                <control type="image"><left>10</left><top>64</top><width>80</width><height>50</height><texture>white.png</texture><colordiffuse>FF333000</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),4K)</visible></control>
+                <control type="image"><left>10</left><top>64</top><width>80</width><height>3</height><texture>white.png</texture><colordiffuse>FFFFD700</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),4K)</visible></control>
+                <control type="image"><left>10</left><top>111</top><width>80</width><height>3</height><texture>white.png</texture><colordiffuse>FFFFD700</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),4K)</visible></control>
+                <control type="image"><left>10</left><top>64</top><width>3</width><height>50</height><texture>white.png</texture><colordiffuse>FFFFD700</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),4K)</visible></control>
+                <control type="image"><left>87</left><top>64</top><width>3</width><height>50</height><texture>white.png</texture><colordiffuse>FFFFD700</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),4K)</visible></control>
                 <control type="label">
-                    <top>5</top>
-                    <left>10</left>
-                    <width>1400</width>
-                    <height>50</height>
+                    <left>10</left><top>64</top><width>80</width><height>50</height>
+                    <font>font12_title</font>
+                    <textcolor>FFFFD700</textcolor>
+                    <align>center</align><aligny>center</aligny>
+                    <label>4K</label>
+                    <visible>String.IsEqual(ListItem.Property(quality),4K)</visible>
+                </control>
+                <!-- Quality badge: 1080p (red) -->
+                <control type="image"><left>10</left><top>64</top><width>80</width><height>50</height><texture>white.png</texture><colordiffuse>FF380808</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),1080p)</visible></control>
+                <control type="image"><left>10</left><top>64</top><width>80</width><height>3</height><texture>white.png</texture><colordiffuse>FFDD3333</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),1080p)</visible></control>
+                <control type="image"><left>10</left><top>111</top><width>80</width><height>3</height><texture>white.png</texture><colordiffuse>FFDD3333</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),1080p)</visible></control>
+                <control type="image"><left>10</left><top>64</top><width>3</width><height>50</height><texture>white.png</texture><colordiffuse>FFDD3333</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),1080p)</visible></control>
+                <control type="image"><left>87</left><top>64</top><width>3</width><height>50</height><texture>white.png</texture><colordiffuse>FFDD3333</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),1080p)</visible></control>
+                <control type="label">
+                    <left>10</left><top>64</top><width>80</width><height>50</height>
+                    <font>font12_title</font>
+                    <textcolor>FFDD3333</textcolor>
+                    <align>center</align><aligny>center</aligny>
+                    <label>1080p</label>
+                    <visible>String.IsEqual(ListItem.Property(quality),1080p)</visible>
+                </control>
+                <!-- Quality badge: 720p (green) -->
+                <control type="image"><left>10</left><top>64</top><width>80</width><height>50</height><texture>white.png</texture><colordiffuse>FF1A0829</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),720p)</visible></control>
+                <control type="image"><left>10</left><top>64</top><width>80</width><height>3</height><texture>white.png</texture><colordiffuse>FF9933CC</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),720p)</visible></control>
+                <control type="image"><left>10</left><top>111</top><width>80</width><height>3</height><texture>white.png</texture><colordiffuse>FF9933CC</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),720p)</visible></control>
+                <control type="image"><left>10</left><top>64</top><width>3</width><height>50</height><texture>white.png</texture><colordiffuse>FF9933CC</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),720p)</visible></control>
+                <control type="image"><left>87</left><top>64</top><width>3</width><height>50</height><texture>white.png</texture><colordiffuse>FF9933CC</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),720p)</visible></control>
+                <control type="label">
+                    <left>10</left><top>64</top><width>80</width><height>50</height>
+                    <font>font12_title</font>
+                    <textcolor>FF9933CC</textcolor>
+                    <align>center</align><aligny>center</aligny>
+                    <label>720p</label>
+                    <visible>String.IsEqual(ListItem.Property(quality),720p)</visible>
+                </control>
+                <!-- Quality badge: SD (gray) -->
+                <control type="image"><left>10</left><top>64</top><width>80</width><height>50</height><texture>white.png</texture><colordiffuse>FF1F1F1F</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),SD)</visible></control>
+                <control type="image"><left>10</left><top>64</top><width>80</width><height>3</height><texture>white.png</texture><colordiffuse>FF888888</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),SD)</visible></control>
+                <control type="image"><left>10</left><top>111</top><width>80</width><height>3</height><texture>white.png</texture><colordiffuse>FF888888</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),SD)</visible></control>
+                <control type="image"><left>10</left><top>64</top><width>3</width><height>50</height><texture>white.png</texture><colordiffuse>FF888888</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),SD)</visible></control>
+                <control type="image"><left>87</left><top>64</top><width>3</width><height>50</height><texture>white.png</texture><colordiffuse>FF888888</colordiffuse><visible>String.IsEqual(ListItem.Property(quality),SD)</visible></control>
+                <control type="label">
+                    <left>10</left><top>64</top><width>80</width><height>50</height>
+                    <font>font12_title</font>
+                    <textcolor>FF888888</textcolor>
+                    <align>center</align><aligny>center</aligny>
+                    <label>SD</label>
+                    <visible>String.IsEqual(ListItem.Property(quality),SD)</visible>
+                </control>
+                <!-- Quality badge: fallback / unknown (dim) -->
+                <control type="image"><left>10</left><top>64</top><width>80</width><height>50</height><texture>white.png</texture><colordiffuse>FF131313</colordiffuse><visible>!String.IsEqual(ListItem.Property(quality),4K)+!String.IsEqual(ListItem.Property(quality),1080p)+!String.IsEqual(ListItem.Property(quality),720p)+!String.IsEqual(ListItem.Property(quality),SD)</visible></control>
+                <control type="image"><left>10</left><top>64</top><width>80</width><height>3</height><texture>white.png</texture><colordiffuse>FF555555</colordiffuse><visible>!String.IsEqual(ListItem.Property(quality),4K)+!String.IsEqual(ListItem.Property(quality),1080p)+!String.IsEqual(ListItem.Property(quality),720p)+!String.IsEqual(ListItem.Property(quality),SD)</visible></control>
+                <control type="image"><left>10</left><top>111</top><width>80</width><height>3</height><texture>white.png</texture><colordiffuse>FF555555</colordiffuse><visible>!String.IsEqual(ListItem.Property(quality),4K)+!String.IsEqual(ListItem.Property(quality),1080p)+!String.IsEqual(ListItem.Property(quality),720p)+!String.IsEqual(ListItem.Property(quality),SD)</visible></control>
+                <control type="image"><left>10</left><top>64</top><width>3</width><height>50</height><texture>white.png</texture><colordiffuse>FF555555</colordiffuse><visible>!String.IsEqual(ListItem.Property(quality),4K)+!String.IsEqual(ListItem.Property(quality),1080p)+!String.IsEqual(ListItem.Property(quality),720p)+!String.IsEqual(ListItem.Property(quality),SD)</visible></control>
+                <control type="image"><left>87</left><top>64</top><width>3</width><height>50</height><texture>white.png</texture><colordiffuse>FF555555</colordiffuse><visible>!String.IsEqual(ListItem.Property(quality),4K)+!String.IsEqual(ListItem.Property(quality),1080p)+!String.IsEqual(ListItem.Property(quality),720p)+!String.IsEqual(ListItem.Property(quality),SD)</visible></control>
+                <control type="label">
+                    <left>10</left><top>64</top><width>80</width><height>50</height>
+                    <font>font12_title</font>
+                    <textcolor>FF888888</textcolor>
+                    <align>center</align><aligny>center</aligny>
+                    <label>SD</label>
+                    <visible>!String.IsEqual(ListItem.Property(quality),4K)+!String.IsEqual(ListItem.Property(quality),1080p)+!String.IsEqual(ListItem.Property(quality),720p)+!String.IsEqual(ListItem.Property(quality),SD)</visible>
+                </control>
+                <!-- Title -->
+                <control type="label">
+                    <top>10</top><left>10</left><width>1260</width><height>50</height>
                     <font>font12</font>
-                    <textcolor>FF000000</textcolor>
-                    <align>left</align>
-                    <aligny>center</aligny>
+                    <textcolor>FFFFFFFF</textcolor>
+                    <align>left</align><aligny>center</aligny>
                     <label>[B][UPPERCASE]$INFO[ListItem.Label][/UPPERCASE][/B]</label>
                 </control>
+                <!-- Detail row 1: Size | Provider | Type -->
                 <control type="label">
-                    <top>80</top>
-                    <left>400</left>
-                    <width>350</width>
-                    <height>50</height>
+                    <top>60</top><left>110</left><width>165</width><height>50</height>
                     <font>font12</font>
-                    <textcolor>FF000000</textcolor>
+                    <textcolor>FFFFFFFF</textcolor>
+                    <align>left</align>
+                    <label>Size: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(size)][/COLOR]</label>
+                </control>
+                <control type="label">
+                    <top>60</top><left>325</left><width>340</width><height>50</height>
+                    <font>font12</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                    <label>Provider: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(provider)][/COLOR]</label>
+                </control>
+                <control type="label">
+                    <top>60</top><left>680</left><width>620</width><height>50</height>
+                    <font>font12</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                    <label>Type: [UPPERCASE][COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(type)][/COLOR][/UPPERCASE]</label>
+                </control>
+                <!-- Detail row 2: Quality | Debrid | Info -->
+                <control type="label">
+                    <top>90</top><left>110</left><width>165</width><height>50</height>
+                    <font>font12</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                    <align>left</align>
+                    <label>Quality: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(quality)][/COLOR]</label>
+                </control>
+                <control type="label">
+                    <top>90</top><left>325</left><width>340</width><height>50</height>
+                    <font>font12</font>
+                    <textcolor>FFFFFFFF</textcolor>
                     <align>left</align>
                     <label>Debrid: [UPPERCASE][COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(debrid_provider)][/COLOR][/UPPERCASE]</label>
                     <visible>!String.Contains(ListItem.Property(debrid_provider),USENET)</visible>
                 </control>
                 <control type="label">
-                    <top>80</top>
-                    <left>400</left>
-                    <width>350</width>
-                    <height>50</height>
+                    <top>90</top><left>325</left><width>340</width><height>50</height>
                     <font>font12</font>
-                    <textcolor>AAFFFFFF</textcolor>
+                    <textcolor>FFFFFFFF</textcolor>
                     <align>left</align>
-                    <label>Hoster:     [UPPERCASE][COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(debrid_provider)][/COLOR][/UPPERCASE]</label>
+                    <label>Hoster: [UPPERCASE][COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(debrid_provider)][/COLOR][/UPPERCASE]</label>
                     <visible>String.Contains(ListItem.Property(debrid_provider),USENET)</visible>
                 </control>
                 <control type="label">
-                    <top>50</top>
-                    <left>10</left>
-                    <width>350</width>
-                    <height>50</height>
+                    <top>90</top><left>680</left><width>620</width><height>50</height>
                     <font>font12</font>
-                    <textcolor>FF000000</textcolor>
-                    <align>left</align>
-                    <label>Size: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(size)][/COLOR]
-                    </label>
-                </control>
-                <control type="label">
-                    <top>50</top>
-                    <left>400</left>
-                    <width>350</width>
-                    <height>50</height>
-                    <textcolor>FF000000</textcolor>
-                    <font>font12</font>
-                    <label>Provider: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(provider)][/COLOR]
-                    </label>
-                </control>
-                <control type="label">
-                    <top>50</top>
-                    <left>800</left>
-                    <width>350</width>
-                    <height>50</height>
-                    <textcolor>FF000000</textcolor>
-                    <font>font12</font>
-                    <label>Type: [UPPERCASE][COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(type)][/COLOR][/UPPERCASE]
-                    </label>
-                </control>
-                <control type="label">
-                    <top>80</top>
-                    <left>10</left>
-                    <width>350</width>
-                    <height>50</height>
-                    <font>font12</font>
-                    <textcolor>FF000000</textcolor>
-                    <align>left</align>
-                    <label>Quality: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(quality)][/COLOR]
-                    </label>
-                </control>
-                <control type="label">
-                    <top>80</top>
-                    <left>800</left>
-                    <width>350</width>
-                    <height>50</height>
-                    <textcolor>FF000000</textcolor>
-                    <font>font12</font>
-                    <label>Info: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(info_text_piped_color)][/COLOR]
-                    </label>
+                    <textcolor>FFFFFFFF</textcolor>
+                    <label>Info: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(info_text_piped_color)][/COLOR]</label>
                 </control>
             </focusedlayout>
         </control>
