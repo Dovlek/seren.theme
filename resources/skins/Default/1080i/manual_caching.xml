@@ -32,7 +32,7 @@
             <viewtype label="Sources">list</viewtype>
             <onup>2000</onup>
             <left>300</left>
-            <top>200</top>
+            <top>185</top>
             <width>1300</width>
             <height>890</height>
             <orientation>vertical</orientation>
