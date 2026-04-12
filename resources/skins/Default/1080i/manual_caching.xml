@@ -120,41 +120,41 @@
                 </control>
                 <!-- Detail row 1: Size | Provider | Type -->
                 <control type="label">
-                    <top>60</top><left>110</left><width>165</width><height>50</height>
+                    <top>64</top><left>110</left><width>165</width><height>20</height><aligny>center</aligny>
                     <font>font12</font>
                     <textcolor>AAFFFFFF</textcolor>
                     <align>left</align>
                     <label>Size: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(size)][/COLOR]</label>
                 </control>
                 <control type="label">
-                    <top>60</top><left>325</left><width>255</width><height>50</height>
+                    <top>64</top><left>325</left><width>255</width><height>20</height><aligny>center</aligny>
                     <font>font12</font>
                     <textcolor>AAFFFFFF</textcolor>
                     <label>Provider: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(provider)][/COLOR]</label>
                 </control>
                 <control type="label">
-                    <top>60</top><left>600</left><width>700</width><height>50</height>
+                    <top>64</top><left>600</left><width>700</width><height>20</height><aligny>center</aligny>
                     <font>font12</font>
                     <textcolor>AAFFFFFF</textcolor>
                     <label>Type: [UPPERCASE][COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(type)][/COLOR][/UPPERCASE]</label>
                 </control>
                 <!-- Detail row 2: Quality | Seeds | Info -->
                 <control type="label">
-                    <top>90</top><left>110</left><width>165</width><height>50</height>
+                    <top>94</top><left>110</left><width>165</width><height>20</height><aligny>center</aligny>
                     <font>font12</font>
                     <textcolor>AAFFFFFF</textcolor>
                     <align>left</align>
                     <label>Quality: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(quality)][/COLOR]</label>
                 </control>
                 <control type="label">
-                    <top>90</top><left>325</left><width>255</width><height>50</height>
+                    <top>94</top><left>325</left><width>255</width><height>20</height><aligny>center</aligny>
                     <font>font12</font>
                     <textcolor>AAFFFFFF</textcolor>
                     <align>left</align>
                     <label>Seeds: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(seeds)][/COLOR]</label>
                 </control>
                 <control type="label">
-                    <top>90</top><left>600</left><width>700</width><height>50</height>
+                    <top>94</top><left>600</left><width>700</width><height>20</height><aligny>center</aligny>
                     <font>font12</font>
                     <textcolor>AAFFFFFF</textcolor>
                     <label>Info: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(info_text_piped_color)][/COLOR]</label>
@@ -260,41 +260,41 @@
                 </control>
                 <!-- Detail row 1: Size | Provider | Type -->
                 <control type="label">
-                    <top>60</top><left>110</left><width>165</width><height>50</height>
+                    <top>64</top><left>110</left><width>165</width><height>20</height><aligny>center</aligny>
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                     <align>left</align>
                     <label>Size: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(size)][/COLOR]</label>
                 </control>
                 <control type="label">
-                    <top>60</top><left>325</left><width>255</width><height>50</height>
+                    <top>64</top><left>325</left><width>255</width><height>20</height><aligny>center</aligny>
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                     <label>Provider: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(provider)][/COLOR]</label>
                 </control>
                 <control type="label">
-                    <top>60</top><left>600</left><width>700</width><height>50</height>
+                    <top>64</top><left>600</left><width>700</width><height>20</height><aligny>center</aligny>
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                     <label>Type: [UPPERCASE][COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(type)][/COLOR][/UPPERCASE]</label>
                 </control>
                 <!-- Detail row 2: Quality | Seeds | Info -->
                 <control type="label">
-                    <top>90</top><left>110</left><width>165</width><height>50</height>
+                    <top>94</top><left>110</left><width>165</width><height>20</height><aligny>center</aligny>
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                     <align>left</align>
                     <label>Quality: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(quality)][/COLOR]</label>
                 </control>
                 <control type="label">
-                    <top>90</top><left>325</left><width>255</width><height>50</height>
+                    <top>94</top><left>325</left><width>255</width><height>20</height><aligny>center</aligny>
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                     <align>left</align>
                     <label>Seeds: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(seeds)][/COLOR]</label>
                 </control>
                 <control type="label">
-                    <top>90</top><left>600</left><width>700</width><height>50</height>
+                    <top>94</top><left>600</left><width>700</width><height>20</height><aligny>center</aligny>
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                     <label>Info: [COLOR $INFO[Window().Property(settings.color)]]$INFO[ListItem.Property(info_text_piped_color)][/COLOR]</label>
